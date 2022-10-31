@@ -1,0 +1,80 @@
+/*zeramos todas as margens e espaços da pag*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', arial;
+  }
+  /*Usamos variavel para facilitar futuras alterações de cores*/
+  :root{
+    --cor00: #181819;
+    --cor01: #292828;
+    --cor02: #2A12DD;
+  }
+  /*Criação do menu*/
+  .navbar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: var(--cor00);
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  /* personalização do link */
+  .navbar a{
+    color: white;
+  }
+  /* personalização do link */
+  .navbar a:hover{
+    color: var(--cor02);
+  }
+  /* personalização do link */
+  a{
+    text-decoration: none;
+  }
+  /*Modificação de texto*/
+  h1{
+    color: white;
+    font-size: 70px;
+  }
+  /*Modificação de texto*/
+  h2{
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+  }
+  /*Personalização de botão*/
+  button{
+    margin-top: 20px;
+    padding: 20px;
+    width: 175px;
+    background-color: var(--cor02);
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
+  /*Adição da imagem no background*/
+  .pag1{
+    background-image:url("https://i.ibb.co/gVcyFcw/001.jpg");
+    padding: 100px 100px;
+  }
+  /*Personalização do conteúdo 2*/
+  .pag2{
+    background-color: var(--cor01);
+    color: white;
+    padding: 100px 100px;
+  }
+  /*Configuração dos Textos*/
+  .pag2 p{
+    padding-top: 30px;
+    min-width: 300px;
+    max-width: 700px;
+    text-align: justify;
+  }
+  /*Personalização do rodapé da pagina*/
+  footer{
+    background-color: var(--cor00);
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
